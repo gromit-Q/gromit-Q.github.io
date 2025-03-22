@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <title>乌鸦的谜语</title>
+    <link rel="stylesheet" href="style谜语.css">
+
+
+    <!-- 区别：<link> 用于建立关联关系（如链接到 CSS 文件），因此使用 href。
+    <script> 用于嵌入 JavaScript 代码，因此使用 src。 -->
+  </head>
+
+  <body background="图片-乌鸦\看-特写.jpg">
+  <!-- 标题容器 -->
+    <div id="title-container">
+            <h1>The Raven-2：Puzzles</h1>
+            <div id="redBlock"></div>
+        </div>
+
+
+    <!-- 游戏容器 -->
+    <div id="frame"></div>
+
+    <div class="gamecontainer">
+   <div class="question" id="question1">
+     <div class="puzzlesTitle">乌鸦的第一个问题：
+      </div>
+       <h3>[我是一种火焰，却不会灼伤；我是一种力量，却无法被衡量。
+         <br>我是一种纽带，却看不见摸不着；我是一种牺牲，却让人心甘情愿。
+         我是什么？]</h3>
+       <div>
+           <input type="radio" name="q1" value="option1">
+           <label for="option1">A.思想</label><br>
+           <input type="radio" name="q1" value="option2">
+           <label for="option2">B.爱</label><br>
+           <input type="radio" name="q1" value="option3">
+           <label for="option3">C.希望</label><br>
+           <input type="radio" name="q1" value="option4">
+           <label for="option4">D.阳光</label><br>
+
+       </div>
+   </div>
+
+
+   <div class="question" id="question2">
+     <div class="puzzlesTitle">乌鸦的第二个问题：
+      </div>
+
+     <h3>[我是终点，却也是起点；我是终结，却也是新生。<br>
+       我是一种旅程，却无人能返回；我是一种解脱，有人恐惧，有人释怀。
+       我是什么？]</h3>
+       <div>
+           <input type="radio" name="q2" value="option1">
+           <label for="option1">A.命运</label><br>
+           <input type="radio" name="q2" value="option2">
+           <label for="option2">B.时间</label><br>
+           <input type="radio" name="q2" value="option3">
+           <label for="option3">C.轮回</label><br>
+           <input type="radio" name="q2" value="option4">
+           <label for="option4">D.死亡</label><br>
+
+       </div>
+   </div>
+
+
+
+   <div class="question" id="question3">
+    <div class="puzzlesTitle">
+    乌鸦的第三个问题：
+     </div>
+     <h3>[我是神话中的存在，却象征着哲学的终极问题；我是死亡的化身，却带来生命的启示。我是谁？]</h3>
+       <div>
+           <input type="radio" name="q3" value="option1">
+           <label for="option1">A.斯芬克斯</label><br>
+           <input type="radio" name="q3" value="option2">
+           <label for="option2">B.宙斯</label><br>
+           <input type="radio" name="q3" value="option3">
+           <label for="option3">C.俄狄浦斯</label><br>
+           <input type="radio" name="q3" value="option4">
+           <label for="option4">D.普罗米修斯</label><br>
+
+          <div id="submitBtn">提交答案</div>
+
+       </div>
+   </div>
+   <br>
+
+
+   <h2>全部回答正确后，我将告诉你一个故事。乌鸦说。</h2><br>
+   <br><br><br>
+
+   <button id="unlockBtn" style="display:block;">乌鸦的故事</button>
+</div>
+
+<script src="script_question.js"></script>
+
+  </body>
+</html>

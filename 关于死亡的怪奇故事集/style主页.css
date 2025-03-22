@@ -1,0 +1,134 @@
+/* 这是 CSS 的一个规则，用于定义自定义字体。
+通过 @font-face，可以将网页中未安装的字体文件加载到浏览器中，并在页面中使用。 */
+@font-face {
+    font-family: 'msjh';
+    src: url('字体/msjh.ttf') format('truetype');
+}
+
+body {
+  background-image: url('图片-乌鸦/封面.jpg'); /* 替换为你的图片路径 */
+      background-size: contain; /* 铺满容器，保持比例 */
+      background-size: 80% auto; /* 宽度放大200%，高度按比例缩放 */
+      background-position: left; /* 图片定格放 */
+      background-repeat: no-repeat; /* 不重复 */
+      background-attachment: fixed;; /* 固定背景（可选） */
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  font-family: 'VonwaonBitmap', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 标题容器样式 */
+#title-container {
+  /* 将元素固定在浏览器窗口的某个位置，即使页面滚动，元素也不会移动。 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+    /* 标题样式 */
+    h1 {
+        margin-top:0;
+        margin-bottom: 0px;
+        font-size: 40px;
+        color: #FFFFFF;
+    }
+
+    /* 红色方块样式 */
+    #redBlock {
+        top:30px;
+        left: 0px;
+        height: 30px;
+        background-color:#5E0004;
+    }
+
+/* 欢迎页容器样式 */
+#homepageContainer {
+      position: absolute; /* 绝对定位 */
+      right: 110px; /* 靠右 */
+      width: 600px; /* 设置宽度 */
+      height: 100px; /* 设置高度 */
+      background-color: inherit;
+      border: 1px solid #000;
+      text-align: center;
+      line-height: 70px; /* 垂直居中 */
+      margin-bottom: 30px:
+}
+
+    img {
+        margin-top: 180px;
+        margin-bottom: -30px;
+        width: 100px; /* 设置图片宽度为200像素 */
+        height: auto; /* 根据宽度等比例缩放高度 */
+    }
+    #introductionMessage, #homepageContainer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 24px;
+        }
+
+    #startButton {
+        display: none;
+        background-color: #5E0004;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: 'VonwaonBitmap', sans-serif;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+
+    #nameForm{
+        display: none;
+        margin-top: 20px;
+        font-size: 20px;
+        height: 40px;
+    }
+
+
+
+    #startGameButton {
+        display: none;
+        background-color: #5E0004;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: 'VonwaonBitmap', sans-serif;
+        cursor: pointer;
+    }
+
+    #returnToHomeButton{
+        display: none;
+        background-color: #5E0004;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: 'VonwaonBitmap', sans-serif;
+        cursor: pointer;
+    }
+
+/* 游戏页容器样式 */
+#game {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: none;
+}
